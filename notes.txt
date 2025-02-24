@@ -1,0 +1,38 @@
+SpringBoot Java API
+
+Descargar Maven y configurar las variables de entorno
+https://maven.apache.org/download.cgi
+
+Sitio web (para crear la plantilla)
+https://start.spring.io/?ref=blog.tericcabrel.com
+
+Dependencias
+Spring Web
+Spring Data JPA
+PostgreSQL Driver
+Lombok
+Spring Security
+Jwt
+
+Comandos
+
+Para instalar dependencias
+mvn clean install / mvn compile
+
+Para ejecutar el proyecto
+mvn spring-boot:run
+
+Uri local
+http://localhost:8080/api/v1/auth/
+http://localhost:8080/api/v1/test/
+
+Variables de entorno Windows
+setx DB_URL "jdbc:postgresql://localhost:5432/your_database"
+setx DB_USER "your_user"
+setx DB_PASSWORD "your_password"
+
+Variables de entorno Linux
+export DB_URL="jdbc:postgresql://localhost:5432/your_database"
+export DB_USER="your_user"
+export DB_PASSWORD="your_password"
+
